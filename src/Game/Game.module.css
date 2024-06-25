@@ -1,0 +1,39 @@
+.progress {
+  background-color: #dcdcdc;
+  width: 600px;
+  height: 15px;
+  border-radius: 10px;
+}
+.progressColor {
+  background: linear-gradient(to right, rgb(246, 254, 24), red);
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+.title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item {
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 2px solid;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  background-color: #f0f0f0;
+}
+.text {
+  font-size: 20px;
+}

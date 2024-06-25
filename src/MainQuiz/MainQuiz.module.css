@@ -1,0 +1,13 @@
+.mainContainer {
+  min-width: 700px;
+  min-height: 300px;
+  padding: 40px 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
