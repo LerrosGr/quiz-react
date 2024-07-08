@@ -1,8 +1,3 @@
-.container {
-  background-color: black;
-  padding: 50px 50px;
-  border-radius: 20px;
-}
 .link {
   padding: 20px 30px;
   font-size: 16px;
@@ -28,10 +23,10 @@
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     to right,
-    rgb(255, 162, 0),
-    #e93108,
-    orange,
-    yellow
+    #33ffff,
+    #0f969c,
+    #09ebc5,
+    #09ebc5
   );
   background-size: 300% 300%;
   animation: gradientAnimation 3s ease-in infinite;
@@ -59,4 +54,15 @@
   font-weight: bold;
   font-size: 40px;
   color: white;
+}
+.iconLogo {
+  animation: moveHorizontally 5s linear infinite, spin 5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

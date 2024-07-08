@@ -1,0 +1,10 @@
+.pageContent {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+.pageContent.visible {
+  opacity: 1;
+  visibility: visible;
+}

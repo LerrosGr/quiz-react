@@ -5,7 +5,7 @@
   border-radius: 10px;
 }
 .progressColor {
-  background: linear-gradient(to right, rgb(246, 254, 24), red);
+  background: linear-gradient(to right, #0f969c, #09ebc5);
   height: 100%;
   border-radius: 10px;
   transition: width 0.5s ease;
@@ -24,7 +24,7 @@
 .item {
   padding: 15px 20px;
   border-radius: 20px;
-  border: 2px solid;
+  border: 2px solid #072e33;
   background-color: transparent;
   cursor: pointer;
   transition: transform 0.2s ease;

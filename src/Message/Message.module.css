@@ -1,0 +1,24 @@
+.message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 20px;
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.show {
+  animation: growText 0.5s forwards;
+}
+
+@keyframes growText {
+  0% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}

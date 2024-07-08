@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: black;
-  background-color: rgb(240, 127, 15);
+  color: #05161a;
+  background-color: #05161a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,11 +17,13 @@
 }
 
 body {
+  position: relative;
   display: flex;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
