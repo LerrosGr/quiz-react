@@ -49,7 +49,7 @@ export default function Result({ correct, questions }) {
   }, []);
 
   useEffect(() => {
-    if (correctPercentage >= 50) {
+    if (correctPercentage >= 60) {
       startFireworks();
     }
 
@@ -65,7 +65,7 @@ export default function Result({ correct, questions }) {
 
   return (
     <div className={css.resultContainer}>
-      {correctPercentage >= 50 ? (
+      {correctPercentage >= 60 ? (
         <img className={css.imageWin} src={imageWin} alt="win" />
       ) : (
         <img className={css.imageLose} src={imageLose} alt="lose" />

@@ -4,8 +4,8 @@ import css from './TextOverlay.module.css';
 
 const TextOverlay = () => {
   const wordCount = useMemo(() => {
-    if (isMobile) return 100;
-    if (isTablet) return 200;
+    if (isMobile) return 60;
+    if (isTablet) return 100;
     return 250;
   }, []);
 
