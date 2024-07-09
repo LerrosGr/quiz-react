@@ -19,13 +19,14 @@
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
   }
   .title {
+    margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 22px;
+    font-size: 30px;
   }
   .linkContainer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
     justify-content: center;
     align-items: center;
   }
@@ -36,8 +37,9 @@
     font-weight: bold;
   }
   .imageWin {
-    width: 150px;
-    height: 150px;
+    margin-left: 40px;
+    width: 100px;
+    height: 100px;
   }
   .imageLose {
     margin-bottom: 15px;
@@ -50,7 +52,7 @@
     padding: 10px 20px;
   }
   .title {
-    font-size: 35px;
+    font-size: 40px;
   }
   .linkContainer {
     gap: 15px;
@@ -59,8 +61,10 @@
     font-size: 18px;
   }
   .imageWin {
-    width: 200px;
-    height: 200px;
+    margin-left: 65px;
+
+    width: 160px;
+    height: 160px;
   }
   .imageLose {
     width: 270px;
@@ -76,5 +80,11 @@
   }
   .linkHome {
     font-size: 20px;
+  }
+  .imageWin {
+    margin-left: 70px;
+
+    width: 180px;
+    height: 180px;
   }
 }

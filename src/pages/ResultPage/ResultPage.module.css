@@ -29,13 +29,13 @@
 
 @media (min-width: 768px) {
   .mainContainer {
-    min-width: 600px;
+    min-width: 700px;
   }
 }
 
 @media (min-width: 1200px) {
   .mainContainer {
-    min-width: 700px;
+    min-width: 800px;
     padding: 30px 30px;
   }
 }

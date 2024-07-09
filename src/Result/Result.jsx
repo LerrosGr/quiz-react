@@ -1,6 +1,6 @@
 import css from './Result.module.css';
 import { Link } from 'react-router-dom';
-import imageWin from '../../images/win.png';
+import imageWin from '../../images/new win.png';
 import imageLose from '../../images/sad.png';
 import confetti from 'canvas-confetti';
 import { useEffect, useCallback, useRef } from 'react';
