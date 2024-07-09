@@ -3,7 +3,7 @@
   z-index: 1;
   min-width: 700px;
   min-height: 300px;
-  padding: 30px;
+  padding: 30px 30px;
   background-color: white;
   display: flex;
   flex-direction: column;

@@ -3,28 +3,8 @@ import Game from '../Game/Game';
 import Message from '../Message/Message';
 import ResultPage from '../pages/ResultPage/ResultPage';
 import { useNavigate } from 'react-router-dom';
+import { questions } from '../questions';
 import css from './MainQuiz.module.css';
-
-const questions = [
-  {
-    id: 1,
-    title: 'Реакт це...?',
-    variants: ['бібліотека', 'фреймворк', 'додаток'],
-    correct: 0,
-  },
-  {
-    id: 2,
-    title: 'Компонент це...?',
-    variants: ['додаток', 'частина', 'бібліотека'],
-    correct: 0,
-  },
-  {
-    id: 3,
-    title: 'Що таке UseState?',
-    variants: ['компонент', 'блок', 'хук реакту'],
-    correct: 0,
-  },
-];
 
 export default function MainQuiz({ initialQuestionId }) {
   const [step, setStep] = useState(0);
@@ -38,8 +18,9 @@ export default function MainQuiz({ initialQuestionId }) {
     const initialStep = questions.findIndex(q => q.id === initialQuestionId);
     if (initialStep !== -1) {
       setStep(initialStep);
+      navigate(`/test/${questions[initialStep].id}`, { replace: true });
     }
-  }, [initialQuestionId]);
+  }, [initialQuestionId, navigate]);
 
   const question = questions[step];
 
@@ -49,16 +30,20 @@ export default function MainQuiz({ initialQuestionId }) {
   };
 
   const onClickVariant = index => {
-    console.log('Clicked index:', index);
-    console.log('Correct answer index:', question.correct);
-
     let updatedCorrect = correct;
 
     if (index === question.correct) {
       updatedCorrect += 1;
       setIsCorrect(true);
       setMessage(
-        getRandomMessage(['GREAT!!!😁', 'AMAZING!🥳', 'EXCELLENT!🤓'])
+        getRandomMessage([
+          'GREAT!!!😁',
+          'AMAZING!🥳',
+          'EXCELLENT!🤓',
+          'Well done! 🏆',
+          'Impressive! 🌟',
+          'Wonderful! 🎊',
+        ])
       );
       console.log('total:', updatedCorrect);
     } else {
@@ -67,8 +52,10 @@ export default function MainQuiz({ initialQuestionId }) {
         getRandomMessage([
           'Try next time 😔',
           'Wrong...',
-          `Oops, not correct`,
+          'Oops, not correct',
           "Oh no, that's wrong😩",
+          'Try again!',
+          "You'll get it next time!",
         ])
       );
     }
@@ -79,7 +66,7 @@ export default function MainQuiz({ initialQuestionId }) {
       if (nextStep < questions.length) {
         setCorrect(updatedCorrect);
         setStep(nextStep);
-        navigate(`/test/${questions[nextStep].id}`);
+        navigate(`/test/${questions[nextStep].id}`, { replace: true });
       } else {
         navigate('/result', { state: { updatedCorrect, questions } });
       }
@@ -88,7 +75,6 @@ export default function MainQuiz({ initialQuestionId }) {
   };
   return (
     <div className={css.mainContainer}>
-      {message && <div className={css.overlay}></div>}
       {step !== questions.length ? (
         <>
           <Game

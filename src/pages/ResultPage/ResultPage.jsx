@@ -17,7 +17,7 @@ export default function ResultPage() {
       setTimeout(() => {
         setIsResultVisible(true);
       }, 100);
-    }, 3900);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);

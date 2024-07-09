@@ -35,10 +35,8 @@ export default function Message({ message, onClose, correct }) {
   }, [onClose, correct]);
 
   return (
-    <>
-      <div className={`${css.message} ${css.show}`}>
-        <p>{message}</p>
-      </div>
-    </>
+    <div className={css.overlay}>
+      <p className={`${css.message} ${css.show}`}>{message}</p>
+    </div>
   );
 }
