@@ -1,7 +1,7 @@
 @media (min-width: 320px) {
   .button {
-    padding: 5px 15px;
-    font-size: 12px;
+    padding: 10px 15px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -48,7 +48,6 @@
 @media (min-width: 768px) {
   .button {
     padding: 10px 20px;
-    font-size: 14px;
   }
   .title {
     font-size: 35px;

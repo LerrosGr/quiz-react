@@ -1,7 +1,7 @@
 .mainContainer {
   position: relative;
   z-index: 1;
-  padding: 30px 20px;
+  padding: 20px 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -23,21 +23,19 @@
 
 @media (min-width: 320px) {
   .mainContainer {
-    max-width: 400px;
-    min-height: 300px;
-    margin: 0 auto;
+    min-width: 340px;
   }
 }
 
 @media (min-width: 768px) {
   .mainContainer {
-    max-width: 700px;
+    min-width: 600px;
   }
 }
 
 @media (min-width: 1200px) {
   .mainContainer {
-    max-width: 800px;
+    min-width: 700px;
     padding: 30px 30px;
   }
 }
