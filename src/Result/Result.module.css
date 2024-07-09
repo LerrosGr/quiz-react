@@ -1,35 +1,81 @@
-.button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  background-color: #fc7703;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out;
+@media (min-width: 320px) {
+  .button {
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #fc7703;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
+  }
+  .button:hover {
+    background-color: #e93108;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  .title {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .linkHome {
+    font-size: 15px;
+    text-decoration: underline;
+    color: #05161a;
+    font-weight: bold;
+  }
+  .imageWin {
+    width: 150px;
+    height: 150px;
+  }
+  .imageLose {
+    margin-bottom: 15px;
+    width: 180px;
+    height: 100px;
+  }
 }
-.button:hover {
-  background-color: #e93108;
-  transform: translateY(-2px);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+@media (min-width: 768px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .linkContainer {
+    gap: 15px;
+  }
+  .linkHome {
+    font-size: 18px;
+  }
+  .imageWin {
+    width: 200px;
+    height: 200px;
+  }
+  .imageLose {
+    width: 270px;
+    height: 150px;
+  }
 }
-.title {
-  margin-bottom: 30px;
-}
-.linkContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.linkHome {
-  font-size: 20px;
-  text-decoration: underline;
-  color: #05161a;
-  font-weight: bold;
+@media (min-width: 1200px) {
+  .button {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .linkHome {
+    font-size: 20px;
+  }
 }

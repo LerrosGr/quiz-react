@@ -1,39 +1,65 @@
-.progress {
-  background-color: #dcdcdc;
-  width: 600px;
-  height: 15px;
-  border-radius: 10px;
-}
-.progressColor {
-  background: linear-gradient(to right, #0f969c, #09ebc5);
-  height: 100%;
-  border-radius: 10px;
-  transition: width 0.5s ease;
-}
-.title {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-size: 40px;
-}
-.list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.item {
-  padding: 15px 20px;
-  border-radius: 20px;
-  border: 2px solid #072e33;
-  background-color: transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
+@media (min-width: 320px) {
+  .progress {
+    background-color: #dcdcdc;
+    width: 300px;
+    height: 15px;
+    border-radius: 10px;
+  }
+  .progressColor {
+    background: linear-gradient(to right, #0f969c, #09ebc5);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  .title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .item {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid #072e33;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
 
-.item:hover {
-  transform: translateY(-3px);
-  background-color: #f0f0f0;
+  .item:hover {
+    transform: translateY(-3px);
+    background-color: #f0f0f0;
+  }
+  .text {
+    font-size: 15px;
+  }
 }
-.text {
-  font-size: 20px;
+@media (min-width: 768px) {
+  .progress {
+    width: 500px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+  .list {
+    gap: 20px;
+  }
+  .item {
+    padding: 15px 20px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .progress {
+    width: 600px;
+  }
 }

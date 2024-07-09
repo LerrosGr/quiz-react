@@ -66,9 +66,9 @@ export default function Result({ correct, questions }) {
   return (
     <div className={css.resultContainer}>
       {correctPercentage >= 50 ? (
-        <img src={imageWin} alt="win" width={200} height={200} />
+        <img className={css.imageWin} src={imageWin} alt="win" />
       ) : (
-        <img src={imageLose} alt="lose" width={270} height={150} />
+        <img className={css.imageLose} src={imageLose} alt="lose" />
       )}
 
       <h2 className={css.title}>

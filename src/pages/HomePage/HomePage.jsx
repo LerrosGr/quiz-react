@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <>
       <div className={css.wrapper}>
-        <FaReact size={50} color="#61dafb" className={css.iconLogo} />
+        <FaReact color="#61dafb" className={css.iconLogo} />
         <p className={css.text}>React</p>
       </div>
 
