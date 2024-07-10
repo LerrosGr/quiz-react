@@ -45,7 +45,6 @@ export default function MainQuiz({ initialQuestionId }) {
           'Wonderful! 🎊',
         ])
       );
-      console.log('total:', updatedCorrect);
     } else {
       setIsCorrect(false);
       setMessage(
